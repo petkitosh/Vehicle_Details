@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title></title>
@@ -10,13 +10,19 @@
         // check whether this function works (online only)
         try {
             var x = google.maps.MapTypeId.TERRAIN;
-            window.location = "http://accessmotorvehicledetails.co.ke/display.php";
+          
             online = true;
         } catch (e) {
-            window.location = "error.html";
+          
             online = false;
         }
-      
+        if (online)
+        {
+            window.location = "http://accessmotorvehicledetails.co.ke/display.php";
+        }
+        else {
+            window.location = "error.html";
+        }
       
     </script>
         
